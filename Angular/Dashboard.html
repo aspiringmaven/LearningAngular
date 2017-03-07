@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Tue, 07 Mar 2017 04:16:14 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>DashBoard</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="dashboard.js"></script>
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+  </head>
+  <body ng-app="dashboardApp" ng-controller="dashboardCntrl">
+
+  <div id="container" >
+  <div id="control"> 
+    <niit-logo></niit-logo>
+	    <niit-banner></niit-banner>
+  		Select the dashboard : 
+		<select 
+				ng-model="selectedOption"
+				ng-options="option for option in ddOptions"
+				ng-change="callBack()"
+				>
+		</select>
+		<input ng-model="selectedOption"/>
+	</div>
+  		<div class="parent">
+			 <div id="dash1"><!--USER-->
+			 	<table>
+					<tr>
+						<td ng-repeat="(key,value) in module1Result[0]">
+							{{key}}
+						</td>
+					</tr>
+					<tr ng-repeat="obj in module1Result">
+						<td>
+							 {{obj.id}}
+						</td>
+						<td>
+							 {{obj.name}}
+						</td>
+						<td>
+							 {{obj.email}}
+						</td>
+					</tr>
+				</table>
+			 </div>
+			 <div id="dash2"> <!--TODO-->
+			 	<table>
+					<tr>
+						<td ng-repeat="(key,value) in module2Result[0]">
+							{{key}}
+						</td>
+					</tr>
+				</table>
+			 </div>
+		</div>
+		<div class="parent">
+			 <div id="dash3"> <!--Album-->
+			 	<table>
+					<tr>
+						<td ng-repeat="(key,value) in module3Result[0]">
+							{{key}}
+						</td>
+					</tr>
+				</table>
+			 </div>
+			 <div id="dash4"> <!--POST-->
+			 	<table>
+					<tr>
+						<td ng-repeat="(key,value) in module4Result[0]">
+							{{key}}
+						</td>
+					</tr>
+				</table>
+			 </div>
+		</div>
+	</div>
+
+  </body>
+</html>

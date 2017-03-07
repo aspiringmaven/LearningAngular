@@ -1,0 +1,45 @@
+	#container {
+	    border: 2px solid black;
+	 }
+		 .parent {
+		     display: flex;
+		}
+		
+		 #dash1{
+		 	border: 2px solid red;
+			width:600px;
+			height:300px;
+			margin-top:10px;
+			margin-left:10px; 
+		  }
+		  
+		   #dash2{
+		 	border: 2px solid yellow;
+			width:600px;
+			height:300px;
+			margin-top:10px;
+			margin-left:10px; 
+		  }
+		   #dash3{
+		 	border: 2px solid purple;
+			width:600px;
+			height:300px;
+			margin-top:10px;
+			margin-left:10px; 
+			margin-bottom:10px;
+		  }
+		  
+		    #dash4{
+		 	border: 2px solid green;
+			width:600px;
+			height:300px;
+			margin-top:10px;
+			margin-left:10px; 
+			margin-bottom:10px;
+		  }
+          
+          #control {
+            margin-top: 5PX;
+            margin-left:350PX;
+          
+           }
