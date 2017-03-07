@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Mon, 06 Mar 2017 11:43:34 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="App.js"></script>
+  </head>
+  <body ng-app="AppModule">
+  
+  		<div ng-controller="AppController">
+					 <p>id : {{product.id}} </p>
+					 <p>name : {{product.name}} </p>
+					 <p>detail : {{product.detail}} </p>		
+					 
+					 <br>
+					 <input ng-model="product.name">
+		</div>
+
+  </body>
+</html>
